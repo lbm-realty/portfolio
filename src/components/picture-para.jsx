@@ -5,6 +5,7 @@ import ibm from "../images/ibm.png";
 import meta from "../images/meta.png";
 import microsoft from "../images/microsoft.png";
 import airbnb from "../images/airbnb.png";
+import companies from '../images/companies.png';
 
 const PictureAndPara = () => {
   return (
@@ -25,6 +26,7 @@ const PictureAndPara = () => {
             href="https://www.linkedin.com/in/labeeb-muntasir-53826b255/"
             target="_blank"
             aria-label="LinkedIn"
+            className="transform hover:scale-110 transition duration-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +42,7 @@ const PictureAndPara = () => {
             href="https://github.com/lbm-realty"
             target="_blank"
             aria-label="GitHub"
+            className="transform hover:scale-110 transition duration-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,6 +58,7 @@ const PictureAndPara = () => {
             href="mailto:labeebmuntasir@gmail.com"
             target="_blank"
             aria-label="Gmail"
+            className="transform hover:scale-110 transition duration-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +81,8 @@ const PictureAndPara = () => {
               />
             </svg>
           </a>
-          <a href="">
-            <div style={{ fontFamily: "Times New Roman" }} className="text-white rounded-full pt-1 pb-1 pr-2 pl-2 bg-blue-700">
+          <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto">
+            <div style={{ fontFamily: "Times New Roman" }} className="text-white rounded-full transform hover:scale-110 transition duration-500 hover:bg-white hover:text-black pt-1 pb-1 pr-2 pl-2 bg-blue-700">
                 Resume
             </div>
           </a>
@@ -90,7 +94,8 @@ const PictureAndPara = () => {
         className="border border-solid border-white rounded-full h-80 w-80"
       />
       <div className="flex">
-      <div className="flex-col">
+        <img src={companies} className="h-[164px]" />
+      {/* <div className="flex-col">
         <div className="flex">
         <img src={salesforce} className="h-16 rounded-full pb-2 pl-4" alt="salesforce" />
         <img src={meta} className="h-12 rounded-full pl-2" alt="meta" />
@@ -100,9 +105,9 @@ const PictureAndPara = () => {
         <img src={microsoft} className="h-12 rounded-2xl ml-4 mt-2 mb-3" alt="microsoft" />
       </div>
       <img src={ibm} className="h-12 rounded-full ml-16" alt="ibm" />
+      </div> */}
       </div>
-      </div>
-      <img src={airbnb} className="h-14 rounded-full ml-2 mt-8" alt="airbnb" />
+      {/* <img src={airbnb} className="h-14 rounded-full ml-2 mt-8" alt="airbnb" /> */}
       </div>
 
     </div>
