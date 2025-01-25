@@ -1,15 +1,15 @@
 import MyPic from "../images/my-pic.png";
-import salesforce from "../images/salesforce.png";
-import cisco from "../images/cisco.png";
-import ibm from "../images/ibm.png";
-import meta from "../images/meta.png";
-import microsoft from "../images/microsoft.png";
-import airbnb from "../images/airbnb.png";
+// import salesforce from "../images/salesforce.png";
+// import cisco from "../images/cisco.png";
+// import ibm from "../images/ibm.png";
+// import meta from "../images/meta.png";
+// import microsoft from "../images/microsoft.png";
+// import airbnb from "../images/airbnb.png";
 import companies from '../images/companies.png';
 
 const PictureAndPara = () => {
   return (
-    <div className="flex bg-darkBlue pt-8 pb-8 pr-2 pl-2 justify-around text-black align-center">
+    <div className="flex bg-offWhite pt-32 pb-8 pr-2 pl-2 justify-around text-black align-center">
       <div className="flex-col">
         <div className="text-4xl font-bold flex pb-4">
           <h2 className="pr-2 pt-1">Hey,</h2>
@@ -21,7 +21,7 @@ const PictureAndPara = () => {
           experience in application development, I feel become comfortable in
           quite a few languages. Let’s connect and build something awesome!
         </p>
-        <div className="flex pt-4 gap-6 items-center">
+        <div className="flex pt-4 gap-4 items-center">
           <a
             href="https://www.linkedin.com/in/labeeb-muntasir-53826b255/"
             target="_blank"
@@ -94,7 +94,7 @@ const PictureAndPara = () => {
         className="border border-solid border-white rounded-full h-80 w-80"
       />
       <div className="flex">
-        <img src={companies} className="h-[164px]" />
+        <img src={companies} className="h-[166px]" />
       {/* <div className="flex-col">
         <div className="flex">
         <img src={salesforce} className="h-16 rounded-full pb-2 pl-4" alt="salesforce" />
