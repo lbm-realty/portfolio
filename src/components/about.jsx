@@ -2,14 +2,16 @@ const About = () => {
   return (
     <div style={{ fontFamily: "Times New Roman" }} 
         className="pt-6">
-      <div className="p-12 felx-col bg-offWhite">
+      <div className="p-12 flex-col bg-offWhite">
+        <div className="flex flex-col justify-center items-center">
         <h2
-          className="text-green-700 font-bold text-5xl justify-center flex"
+          className="text-green-700 font-bold text-5xl flex"
         >
           About Me
         </h2>
-        <div className="h-[1px] w-44 ml-[495px] bg-green-600 text-black"></div>
-        <div className="pt-4 text-lg">
+        <div className="h-[1px] w-44 bg-green-600 text-black"></div>
+        </div>
+        <div className="pr-16 pl-16 pt-4 text-lg">
           Hey! I'm Labeeb, a tech enthusiast who's basically turning coffee into
           code at Texas Tech. I get super excited about
           solving problems through technology. Whether it's building websites,
