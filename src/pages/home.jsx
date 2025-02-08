@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import PictureAndPara from "../components/picture-para";
 import About from "../components/about";
 import Experience from "../components/experience";
+import Projects from "../components/projects";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
         <PictureAndPara />
         <About />
         <Experience />
+        <Projects />
         </>
     )
 }
