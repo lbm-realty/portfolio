@@ -17,7 +17,7 @@ const PictureAndPara = () => {
         <div className="flex pt-4 gap-4 items-center">
           <a
             href="https://www.linkedin.com/in/labeeb-muntasir-53826b255/"
-            target="_blank"
+            // target="_blank"
             aria-label="LinkedIn"
             className="transform hover:scale-110 transition duration-500"
           >
@@ -33,7 +33,7 @@ const PictureAndPara = () => {
           </a>
           <a
             href="https://github.com/lbm-realty"
-            target="_blank"
+            // target="_blank"
             aria-label="GitHub"
             className="transform hover:scale-110 transition duration-500"
           >
@@ -49,7 +49,7 @@ const PictureAndPara = () => {
           </a>
           <a
             href="mailto:labeebmuntasir@gmail.com"
-            target="_blank"
+            // target="_blank"
             aria-label="Gmail"
             className="transform hover:scale-110 transition duration-500"
           >
@@ -84,6 +84,7 @@ const PictureAndPara = () => {
       <img
         src={MyPic}
         className="border border-solid border-white rounded-full h-80 w-80"
+        alt="my_pic"
       />
       </div>
     </div>

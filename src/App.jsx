@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
 import PictureAndPara from "./components/picture-para";
 import About from "./components/about";
