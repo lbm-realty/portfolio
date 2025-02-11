@@ -23,18 +23,13 @@ const Experience = () => {
 
   return (
     <div id="experience" className="pt-4 px-4 sm:px-12 pb-14">
-      {/* <div className="px-4 sm:px-24">
-        <div className="w-full h-1 bg-black my-12"></div>
-      </div> */}
         <div className="mt-6 w-full h-1 bg-gradient-to-r from-transparent via-black to-transparent mb-16"></div>
         <div className="p-6 sm:p-12 bg-gray-200 opacity-85 rounded-3xl">
         <div className="flex flex-col items-center">
           <h2 className="p-2 rounded-2xl text-red-900 justify-center text-bold text-2xl sm:text-5xl font-bold">
             Experience
           </h2>
-          {/* <div className="h-[1.5px] bg-red-700 w-48"></div> */}
         </div>
-        {/* <div> */}
         <div className="pt-6 sm:pt-12">
           <div className="relative p-6 bg-gray-100 sm:p-12 border-blue-200 border-2 rounded-3xl cursor-pointer hover:scale-105 duration-500">
             <div className="flex flex-col gap-4 justify-between sm:flex-row">
@@ -59,7 +54,7 @@ const Experience = () => {
                   UX/UI for better engagement
                 </div>
               </div>
-              <div className="px-4 sm:px-0">
+              <div className="px-4 sm:px-0 sm:w-80">
                 <img
                   className="w-64 bg-red-700 h-56 rounded-full"
                   src={msa_logo}
@@ -67,21 +62,18 @@ const Experience = () => {
                 />
               </div>
             </div>
-            {/* <div className="pr-80"> */}
             <div className="inset-0 flex items-center justify-center bottom-1 absolute bg-gray-200 rounded-3xl text-3xl text-blue-950 opacity-0 hover:opacity-90">
-              <a href="www.ttumsa.org" className="">
+              <a href="https://ttumsa.org/" className="">
                 Visit Website🔗
               </a>
             </div>
-            {/* </div> */}
           </div>
-          {/* </div> */}
           <div className="pt-12">
             <div className="bg-gray-100 border-blue-200 border-2 p-6 sm:p-12 rounded-3xl flex cursor-pointer hover:scale-105 duration-500 relative">
               <div className="flex flex-col gap-4 sm:flex-row justify-between">
                 <div>
                   <h2 className="font-bold text-lg sm:text-2xl">
-                    🎓 Student Tutor – Texas Tech Learning Center (January 2024
+                    🎓 Student Tutor – Texas Tech Learning Center (Jan 2024
                     - Present)
                   </h2>
                   <div className="text-md sm:text-lg pt-4 sm:pl-10">
@@ -98,7 +90,7 @@ const Experience = () => {
                     making complex topics approachable
                   </div>
                 </div>
-                <div className="flex justify-center px-6 sm:px-0">
+                <div className="flex justify-center px-6 sm:px-0 sm:w-80">
                 <img
                   className="bg-red-700 h-56 w-64"
                   src={ttu_logo}
