@@ -1,19 +1,12 @@
 import MyPic from "../images/my-pic.png";
-// import salesforce from "../images/salesforce.png";
-// import cisco from "../images/cisco.png";
-// import ibm from "../images/ibm.png";
-// import meta from "../images/meta.png";
-// import microsoft from "../images/microsoft.png";
-// import airbnb from "../images/airbnb.png";
-import companies from '../images/companies.png';
 
 const PictureAndPara = () => {
   return (
-    <div className="flex bg-offWhite pt-32 pb-8 pr-2 pl-2 justify-around text-black align-center">
-      <div className="flex-col">
+    <div id="home" className="flex flex-col-reverse items-center gap-12 pt-32 pb-8 px-4 sm:justify-around sm:flex-row text-black align-center">
+      <div className="flex-col bg-gray-200 opacity-85 rounded-3xl p-6">
         <div className="text-4xl font-bold flex pb-4">
           <h2 className="pr-2 pt-1">Hey,</h2>
-          <h2 className="text-red-500 text-5xl">I’m Labeeb!</h2>
+          <h2 className="text-red-700 text-5xl">I’m Labeeb!</h2>
         </div>
         <p className="w-80 font-times text-xl">
           A Computer Science student at Texas Tech University, passionate about
@@ -33,7 +26,7 @@ const PictureAndPara = () => {
               viewBox="0 0 24 24"
               width="32"
               height="30"
-              fill="#0A26D2"
+              fill="#0F16BA"
             >
               <path d="M20.452 20.452H16.81v-5.356c0-1.279-.025-2.926-1.78-2.926-1.782 0-2.056 1.391-2.056 2.825v5.457H9.333V9h3.465v1.561h.05c.482-.911 1.658-1.874 3.413-1.874 3.65 0 4.323 2.401 4.323 5.523v6.242zM5.337 7.433a2.015 2.015 0 1 1 0-4.03 2.015 2.015 0 0 1 0 4.03zM6.793 20.452H3.882V9h2.91v11.452zM22.225 0H1.771C.792 0 0 .77 0 1.714v20.572C0 23.23.793 24 1.772 24h20.452C23.208 24 24 23.23 24 22.286V1.714C24 .77 23.208 0 22.225 0z" />
             </svg>
@@ -66,23 +59,22 @@ const PictureAndPara = () => {
               width="42"
               height="46"
             >
-              {/* <path fill="#000" d="M24 26.95 8 16V35q0 1.25.875 2.125T11 38h26q1.25 0 2.125-.875T40 35V16l-16 10.95q-.6.4-1.2.4t-1.2-.4z"/> */}
               <path
                 fill="#fff"
                 d="M8 16v-3q0-1.25.875-2.125T11 10h26q1.25 0 2.125.875T40 13v3l-16 10.95q-.6.4-1.2.4t-1.2-.4L8 16z"
               />
               <path
-                fill="#3C16E8"
+                fill="#3116F8"
                 d="M8 16l16 10.95q.6.4 1.2.4t1.2-.4L40 16V13q0-1.25-.875-2.125T37 10H11q-1.25 0-2.125.875T8 13v3z"
               />
               <path
-                fill="#0A86D2"
+                fill="#0F8FF2"
                 d="M8 16v19q0 1.25.875 2.125T11 38h26q1.25 0 2.125-.875T40 35V16l-16 10.95q-.6.4-1.2.4t-1.2-.4z"
               />
             </svg>
           </a>
           <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto">
-            <div style={{ fontFamily: "Times New Roman" }} className="text-white rounded-full transform hover:scale-110 transition duration-500 hover:bg-white hover:text-black pt-1 pb-1 pr-2 pl-2 bg-blue-700">
+            <div style={{ fontFamily: "Times New Roman" }} className="text-white rounded-full transform hover:scale-110 transition duration-500 hover:bg-white hover:text-black pt-1 pb-1 pr-2 pl-2 bg-blue-900">
                 Resume
             </div>
           </a>
@@ -93,23 +85,7 @@ const PictureAndPara = () => {
         src={MyPic}
         className="border border-solid border-white rounded-full h-80 w-80"
       />
-      <div className="flex">
-        <img src={companies} className="h-[166px]" />
-      {/* <div className="flex-col">
-        <div className="flex">
-        <img src={salesforce} className="h-16 rounded-full pb-2 pl-4" alt="salesforce" />
-        <img src={meta} className="h-12 rounded-full pl-2" alt="meta" />
       </div>
-      <div className="flex">
-        <img src={cisco} className="h-16 rounded-full pb-2" alt="cisco" />
-        <img src={microsoft} className="h-12 rounded-2xl ml-4 mt-2 mb-3" alt="microsoft" />
-      </div>
-      <img src={ibm} className="h-12 rounded-full ml-16" alt="ibm" />
-      </div> */}
-      </div>
-      {/* <img src={airbnb} className="h-14 rounded-full ml-2 mt-8" alt="airbnb" /> */}
-      </div>
-
     </div>
   );
 };

@@ -11,8 +11,8 @@ module.exports = {
       boxShadow: {
         custom: '0 4px 6px 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
       },
-      colors: {
-        offWhite: "#f4f1eb"
+      backgroundImage: {
+        offWhite: "url('/src/images/bg-4.png')"
       }
     },
   },

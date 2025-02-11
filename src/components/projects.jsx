@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useState, useEffect } from "react";
 
 const Projects = () => {
     function SampleNextArrow(props) {
@@ -35,8 +36,35 @@ const Projects = () => {
           variableWidth: true,
           adaptiveHeight: true,
           nextArrow: <SampleNextArrow />,
-          prevArrow: <SamplePrevArrow />
+          prevArrow: <SamplePrevArrow />,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 2,
+                infinite: true
+                }
+              }]
         }
+
+        const [width, setWidth] = useState(window.innerWidth);
+
+        useEffect(() => {
+          const handleResize = () => setWidth(window.innerWidth);
+          window.addEventListener('resize', handleResize);
+          return () => window.removeEventListener('resize', handleResize);
+        }, []);
 
     const projects = [
         {
@@ -91,20 +119,26 @@ const Projects = () => {
     ]
 
   return (
-    <div className="pt-4">
-      <div style={{ fontFamily: "Times New Roman"}} className="bg-offWhite p-8">
-      <div className="flex flex-col items-center pb-12">
-        <h2 className="text-purple-900 justify-center text-bold text-5xl font-bold">
+    <div id="projects" className="pt-4 px-3 sm:px-12">
+            {/* <div className="sm:px-24">
+        <div className="w-full h-1 bg-black mb-12 mt-12"></div>
+      </div> */}
+              <div className="w-full h-1 bg-gradient-to-r from-transparent via-black to-transparent mb-16"></div>
+
+
+      <div  className="rounded-3xl bg-gray-200 opacity-85 px-4 py-8 sm:p-8">
+      <div className="flex flex-col items-center pb-6 sm:pb-12">
+        <h2 className="text-purple-900 justify-center text-bold text-2xl sm:text-5xl font-bold">
           Projects
         </h2>
-        <div className="h-[1.5px] bg-purple-700 w-36"></div>
+        {/* <div className="h-[1.5px] bg-purple-700 w-36"></div> */}
         </div>
 
         <div className="">
          <Slider {...settings}>
             {projects.map((project, index) => (
-                <div style={{ width: 450 }} className="flex flex-col justify-center items-center p-4 bg-gray-300 rounded-xl shadow-lg h-[475px]">
-                <h1 className="font-bold text-xl">{project.title}</h1>
+                <div style={{ width: width > 600 ? 450 : 350 }} className="bg-gray-100 flex flex-col border-solid border-gray-300 border-2 justify-center items-center p-4 rounded-xl shadow-lg h-[595px] sm:h-[485px]">
+                <h1 className="font-bold text-lg sm:text-xl">{project.title}</h1>
                 <div className="pt-2 flex flex-col gap-2">
                     <div>
                     <h1 className="font-bold text-lg">• A little Backstory</h1>
@@ -118,7 +152,7 @@ const Projects = () => {
                             <p className="pl-3">{point}</p>
                         ))}
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex flex-wrap sm:items-center sm:flex-rows">
                         <h1 className="font-bold pr-1">• Tools: </h1>
                         <p className="italic">{project.tools}</p>
                     </div>
