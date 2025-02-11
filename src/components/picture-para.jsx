@@ -1,4 +1,5 @@
 import MyPic from "../images/my-pic.png";
+import resume from "../images/Resume-2025-Internship.pdf";
 
 const PictureAndPara = () => {
   return (
@@ -73,7 +74,7 @@ const PictureAndPara = () => {
               />
             </svg>
           </a>
-          <a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto">
+          <a href={resume} download="Labeeb_Resume.pdf">
             <div style={{ fontFamily: "Times New Roman" }} className="text-white rounded-full transform hover:scale-110 transition duration-500 hover:bg-white hover:text-black pt-1 pb-1 pr-2 pl-2 bg-blue-900">
                 Resume
             </div>
