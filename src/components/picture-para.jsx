@@ -11,7 +11,7 @@ const PictureAndPara = () => {
         <p className="w-80 font-times text-xl">
           A Computer Science student at Texas Tech University, passionate about
           building things that make a difference. With about 2 years of
-          experience in application development, I feel become comfortable in
+          experience in application development, I feel comfortable in
           quite a few languages. Let’s connect and build something awesome!
         </p>
         <div className="flex pt-4 gap-4 items-center">
