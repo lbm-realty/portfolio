@@ -37,7 +37,7 @@ const Experience = () => {
         <div onMouseEnter={() => { setIsHovered1(true) }}
                onMouseLeave={() => { setIsHovered1(false) }} 
                className="pt-6 sm:pt-12">
-        {isHovered1 == false ? (
+        {isHovered1 === false ? (
           <div
           className="p-6 bg-gray-100 sm:p-12 border-blue-200 border-2 rounded-3xl cursor-pointer">
             <div className="flex flex-col gap-4 justify-between sm:flex-row">
@@ -75,7 +75,7 @@ const Experience = () => {
           <div onMouseEnter={() => { setIsHovered2(true) }}
                  onMouseLeave={() => { setIsHovered2(false) }}
                 className="pt-12">
-            { isHovered2 == false ? (
+            { isHovered2 === false ? (
             <div className="bg-gray-100 border-blue-200 border-2 p-6 sm:p-12 rounded-3xl flex cursor-pointer">
               <div className="flex flex-col gap-4 sm:flex-row justify-between">
                 <div>
