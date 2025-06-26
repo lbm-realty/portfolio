@@ -1,5 +1,6 @@
 import msa_logo from "../images/msa-logo.png";
 import ttu_logo from "../images/ttu-logo.png";
+import { useState } from "react";
 
 const Experience = () => {
   const days = [
@@ -21,37 +22,38 @@ const Experience = () => {
     "02:00 - 06:00",
   ];
 
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
   return (
-    <div id="experience" className="pt-4 px-4 sm:px-12 pb-14">
-        <div className="mt-6 w-full h-1 bg-gradient-to-r from-transparent via-black to-transparent mb-16"></div>
+    <div id="experience" className="">
         <div className="p-6 sm:p-12 bg-gray-200 opacity-85 rounded-3xl">
         <div className="flex flex-col items-center">
-          <h2 className="p-2 rounded-2xl text-red-900 justify-center text-bold text-2xl sm:text-5xl font-bold">
+          <h2 className="text-red-900 justify-center text-bold text-3xl sm:text-5xl font-bold">
             Experience
           </h2>
         </div>
-        <div className="pt-6 sm:pt-12">
-          <div className="relative p-6 bg-gray-100 sm:p-12 border-blue-200 border-2 rounded-3xl cursor-pointer hover:scale-105 duration-500">
+        
+        <div onMouseEnter={() => { setIsHovered1(true) }}
+               onMouseLeave={() => { setIsHovered1(false) }} 
+               className="pt-6 sm:pt-12">
+        {isHovered1 == false ? (
+          <div
+          className="p-6 bg-gray-100 sm:p-12 border-blue-200 border-2 rounded-3xl cursor-pointer">
             <div className="flex flex-col gap-4 justify-between sm:flex-row">
               <div>
                 <h2 className="font-bold text-lg sm:text-2xl">
                   🚀 Full Stack Developer – Texas Tech MSA (June 2024 - Present)
                 </h2>
                 <div className="text-md sm:text-lg pt-4 sm:pl-10">
-                  • Designed and built a fully responsive website for Texas Tech
-                  MSA, making it easier for students to access events and
-                  resources
+                  • Developed and launched a responsive website for Texas Tech MSA, enhancing online presence and accessibility 
                   <br />
-                  • Developed a secure admin dashboard to manage events
-                  dynamically
+                  • Engineered a custom REST API with secure admin authentication for streamlined event management 
                   <br />
-                  • Integrated Stripe payments to enable donations and support
-                  student led initiatives
+                  • Integrated Stripe payment processing, generating over $11,000 in donations for organizational initiatives 
                   <br />
-                  • Ensured seamless deployment using Netlify with smooth CI/CD
-                  workflows
-                  <br />• Worked closely with the marketing team to improve
-                  UX/UI for better engagement
+                  • Partnered with marketing team in Agile-driven collaboration to optimize UI and enhance user experience
+                  <br />
                 </div>
               </div>
               <div className="px-4 sm:px-0 sm:w-80">
@@ -62,14 +64,19 @@ const Experience = () => {
                 />
               </div>
             </div>
-            <div className="inset-0 flex items-center justify-center bottom-1 absolute bg-gray-200 rounded-3xl text-3xl text-blue-950 opacity-0 hover:opacity-90">
+            </div>
+            ) : (
+            <div className="border-blue-200 border-2 rounded-3xl py-48 cursor-pointer w-full flex items-center justify-center rounded-3xl text-3xl text-blue-950 opacity-0 hover:opacity-90">
               <a href="https://ttumsa.org/" className="">
                 Visit Website🔗
               </a>
             </div>
-          </div>
-          <div className="pt-12">
-            <div className="bg-gray-100 border-blue-200 border-2 p-6 sm:p-12 rounded-3xl flex cursor-pointer hover:scale-105 duration-500 relative">
+            )}
+          <div onMouseEnter={() => { setIsHovered2(true) }}
+                 onMouseLeave={() => { setIsHovered2(false) }}
+                className="pt-12">
+            { isHovered2 == false ? (
+            <div className="bg-gray-100 border-blue-200 border-2 p-6 sm:p-12 rounded-3xl flex cursor-pointer">
               <div className="flex flex-col gap-4 sm:flex-row justify-between">
                 <div>
                   <h2 className="font-bold text-lg sm:text-2xl">
@@ -77,17 +84,12 @@ const Experience = () => {
                     - Present)
                   </h2>
                   <div className="text-md sm:text-lg pt-4 sm:pl-10">
-                    • Tutored more than 90 students in Calculus 1, Calculus 2,
-                    Programming Principles in C, utilizing strong communication
-                    and verbal skills to clarify complex concepts
+                    • Tutored 100+ students in Calculus 1 and 2, and Programming Principles in C using tailored teaching methods
                     <br />
-                    • Helped students achieve 90%+ scores through structured
-                    tutoring
+                    • Assisted students in achieving 90% or higher scores on exams, enhancing their understanding and grades 
                     <br />
-                    • Demonstrated strong teaching and subject matter expertise
-                    by receiving a return offer for 3 consecutive semesters
-                    <br />• Adapted lessons to individual learning styles,
-                    making complex topics approachable
+                    • Received a return offer to teach computer science courses, demonstrating strong teaching and subject matter expertise
+                    <br />
                   </div>
                 </div>
                 <div className="flex justify-center px-6 sm:px-0 sm:w-80">
@@ -98,7 +100,9 @@ const Experience = () => {
                 />
                 </div>
               </div>
-              <div className="flex flex-col bottom-1 absolute justify-center items-center opacity-0 inset-0 rounded-3xl hover:opacity-95 hover:bg-gray-200">
+              </div>
+              ) : (
+              <div className="border-blue-200 border-2 rounded-3xl py-24 cursor-pointer flex flex-col bottom-1 justify-center items-center opacity-0 inset-0 rounded-3xl hover:opacity-95 hover:bg-gray-200">
                 <div className="flex flex-col items-center gap-4 sm:flex-row">
                   <h2 className="text-2xl sm:text-3xl font-bold sm:pr-8">📅:</h2>
                   <div className="flex flex-wrap items-center justify-center gap-4">
@@ -117,7 +121,7 @@ const Experience = () => {
                   </p>
                 </div>
               </div>
-            </div>
+              )}
           </div>
         </div>
       </div>

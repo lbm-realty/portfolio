@@ -1,13 +1,11 @@
 const About = () => {
   return (
     <div id="about"
-        className="px-4 sm:px-32">
-          {/* <div className="w-full h-1 bg-black mb-20 mt-12"></div> */}
-          <div className="mt-4 w-full h-1 bg-gradient-to-r from-transparent via-black to-transparent mb-16"></div>
-          <div className="py-6 sm:py-12 px-3 flex-col bg-gray-200 opacity-85 rounded-3xl">
+        className="">
+          <div className="py-6 flex-col bg-gray-200 opacity-85 rounded-3xl">
         <div className="flex flex-col justify-center items-center">
         <h2
-          className="text-green-700 font-bold text-2xl sm:text-4xl flex"
+          className="text-green-700 font-bold p-4 sm:text-5xl text-3xl flex"
         >
           About Me
         </h2>

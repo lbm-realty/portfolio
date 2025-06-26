@@ -3,11 +3,11 @@ import resume from "../images/Resume-2025-Internship.pdf";
 
 const PictureAndPara = () => {
   return (
-    <div id="home" className="flex flex-col-reverse items-center gap-12 pt-32 pb-8 px-4 sm:justify-around sm:flex-row text-black align-center">
-      <div className="flex-col bg-gray-200 opacity-85 rounded-3xl p-6">
-        <div className="text-4xl font-bold flex pb-4">
+    <div id="home" className="flex flex-col-reverse sm:flex-row-reverse items-center gap-12 pt-32 text-black align-center">
+      <div className="flex-col bg-gray-200 opacity-85 p-4 rounded-3xl">
+        <div className="text-2xl font-bold flex-col pb-4">
           <h2 className="pr-2 pt-1">Hey,</h2>
-          <h2 className="text-red-700 text-5xl">I’m Labeeb!</h2>
+          <h2 className="text-red-700 text-4xl pl-8">I’m Labeeb!</h2>
         </div>
         <p className="w-80 font-times text-xl">
           A Computer Science student at Texas Tech University, passionate about

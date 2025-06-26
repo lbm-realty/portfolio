@@ -1,9 +1,8 @@
 const Connect = () => {
   return (
-      <div id="connect" className="p-8 sm:px-64 flex flex-col justify-center items-center">
-        <div className="w-full h-1 bg-gradient-to-r from-transparent via-black to-transparent mb-16"></div>
-        <div className="flex flex-col items-center bg-gray-200 opacity-85 py-8 px-12 sm:px-20 rounded-3xl w-full">
-          <h2 className="text-xl sm:text-4xl font-bold pb-4 text-green-800">Connect With Me!</h2>
+      <div id="connect" className="w-full">
+        <div className="flex flex-col items-center bg-gray-200 opacity-85 py-8 px-12 sm:px-20 rounded-3xl">
+          <h2 className="text-3xl sm:text-4xl font-bold pb-4 text-green-800">Connect With Me!</h2>
           <form className="w-full flex flex-col gap-2" action="https://api.web3forms.com/submit" method="POST">
             <input
               type="hidden"
